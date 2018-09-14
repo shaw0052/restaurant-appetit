@@ -1,0 +1,210 @@
+[
+    {
+        "id": 1,
+        "kategori": "pizzaer",
+        "navn": "Pizza - GRETHE",
+        "billede": "pizza_1",
+        "beskrivelse": "Pizza af fuldkorns bund med tomatsauce, Fior di latte (øko), basilikum, olivenolie",
+        "pris": 90
+  },
+    {
+        "id": 2,
+        "kategori": "pizzaer",
+        "navn": "Pizza - NAPOLITIANER",
+        "billede": "pizza_2",
+        "beskrivelse": "Pizza af klassisk bund med tomatsauce, mozzarella, ansjoser, oregano",
+        "pris": 80
+  },
+    {
+        "id": 3,
+        "kategori": "pizzaer",
+        "navn": "Pizza - KØDLØS",
+        "billede": "pizza_3",
+        "beskrivelse": "Pizza af fulkornsbund med grønsauce, aubergine, peberfrugt, sylt. rødløg, rucola, chiliolie",
+        "pris": 110
+  },
+    {
+        "id": 4,
+        "kategori": "pizzaer",
+        "navn": "Pizza - SÆSON",
+        "billede": "pizza_4",
+        "beskrivelse": "Pizza af fulkornsbund med taleggio, finocchiona, syltet fennikel, grøn oliven tapenade",
+        "pris": 110
+  },
+    {
+        "id": 5,
+        "kategori": "pizzaer",
+        "navn": "Pizza - STORM",
+        "billede": "pizza_5",
+        "beskrivelse": "Pizza af fuldkornsbund, rød sauce, Gedeost, 'Nduja (stærk krydret blød pølse fra Calabrien), aubergine, friske tomater og rucola",
+        "pris": 100
+  },
+    {
+        "id": 6,
+        "kategori": "pizzaer",
+        "navn": "Pizza - Blærerøv",
+        "billede": "pizza_6",
+        "beskrivelse": "Pizza af fulkornsbund, tomatsauce, Fior di latte (øko), Bresaola, balsamico, rucola",
+        "pris": 110
+  },
+    {
+        "id": 7,
+        "kategori": "pizzaer",
+        "navn": "Pizza - OBELIX",
+        "billede": "pizza_7",
+        "beskrivelse": "Pizza af fulkornsbund med tomatsauce, mozzarella, vildsvinepølse, valnødder, balsamico",
+        "pris": 90
+  },
+    {
+        "id": 8,
+        "kategori": "pizzaer",
+        "navn": "Pizza - BLEGFIS",
+        "billede": "pizza_8",
+        "beskrivelse": "Pizza af klassisk bund med hvid sauce, mozzarella, kødboller, salvie. (Bemærk at kødbollerne indeholder gluten og vi har derfor undladt at tilbyde Blegfis med glutenfri bund)",
+        "pris": 75
+  },
+    {
+        "id": 9,
+        "kategori": "pizzaer",
+        "navn": "Pizza - LUNEFULD",
+        "billede": "pizza_9",
+        "beskrivelse": "Pizza af klassisk bund med tomatsauce, mozzarella, kogt skinke, sorte oliven, grillede artiskokker",
+        "pris": 80
+  },
+    {
+        "id": 10,
+        "kategori": "sandwiches",
+        "navn": "Grillet kyllinge-sandwich",
+        "billede": "sandwich_1",
+        "beskrivelse": "Sandwich af fulkornsbolle med grillede peberfrugter, syltede rødløg, rucola og chilimayo",
+        "pris": 70
+  },
+    {
+        "id": 11,
+        "kategori": "sandwiches",
+        "navn": "Grillet sandwich med skinke og digekrone",
+        "billede": "sandwich_2",
+        "beskrivelse": "Sandwich af fulkornsbolle med rucola og grøn sauce. Digekrone er en fast, økologisk komælksost fra Tistrup mejeri",
+        "pris": 65
+  },
+    {
+        "id": 12,
+        "kategori": "sandwiches",
+        "navn": "Grillet steak-sandwich",
+        "billede": "sandwich_3",
+        "beskrivelse": "Sandwich af fulkornsbolle med artiskokker og grillede peberfrugter, rucola og chilimayo",
+        "pris": 75
+  },
+    {
+        "id": 13,
+        "kategori": "sandwiches",
+        "navn": "Grillet vegetar-sandwich",
+        "billede": "sandwich_4",
+        "beskrivelse": "Sandwich af fulkornsbolle med grillede auberginer og peberfrugter, syltede rødløg, rucola og grøn sauce",
+        "pris": 65
+  },
+    {
+        "id": 14,
+        "kategori": "sandwiches",
+        "navn": "Sæson sandwich",
+        "billede": "sandwich_5",
+        "beskrivelse": "Sandwich af fulkornsbolle med spicy tomatsauce, ventricina, taleggio og artiskok",
+        "pris": 70
+  },
+    {
+        "id": 15,
+        "kategori": "salater",
+        "navn": "Cæsar salat",
+        "billede": "salat_1",
+        "beskrivelse": "Salat af romaine, øko-kylling, ansjoser, parmesan, croutoner",
+        "pris": 75
+  },
+    {
+        "id": 16,
+        "kategori": "salater",
+        "navn": "Vegetar salat",
+        "billede": "salat_2",
+        "beskrivelse": "Salat af rucola, tomat, basilikum og foir di latte",
+        "pris": 65
+  },
+    {
+        "id": 17,
+        "kategori": "salater",
+        "navn": "Bønne- & tunsalat",
+        "billede": "salat_3",
+        "beskrivelse": "Salat af grønne bønner, tun,  øko-æg, syltede løg og tomat",
+        "pris": 75
+  },
+    {
+        "id": 18,
+        "kategori": "andet",
+        "navn": "Sæson suppe",
+        "billede": "suppe",
+        "beskrivelse": "Svampesuppe med pancetta og croutone",
+        "pris": 65
+  },
+    {
+        "id": 19,
+        "kategori": "andet",
+        "navn": "Meatballs i tomatsauce",
+        "billede": "kodboller",
+        "beskrivelse": "Kødboller i tomatsauce med salvie og parmesan. Serveres med brød",
+        "pris": 90
+  },
+    {
+        "id": 20,
+        "kategori": "drikkevarer",
+        "navn": "MAMA Lemon",
+        "billede": "drik_1",
+        "beskrivelse": "Lemon lemonade - Øko 33 cl.",
+        "pris": 25
+  },
+    {
+        "id": 21,
+        "kategori": "drikkevarer",
+        "navn": "MAMA Orange",
+        "billede": "drik_2",
+        "beskrivelse": "Orange lemonade  - Øko 33 cl.",
+        "pris": 25
+  },
+    {
+        "id": 22,
+        "kategori": "drikkevarer",
+        "navn": "MAMA Passion",
+        "billede": "drik_3",
+        "beskrivelse": "Passion lemonade",
+        "pris": 25
+  },
+    {
+        "id": 23,
+        "kategori": "drikkevarer",
+        "navn": "Decideret Cider",
+        "billede": "drik_4",
+        "beskrivelse": "Decideret Cider 'Lystig' - Øko 33 cl.",
+        "pris": 50
+  },
+    {
+        "id": 24,
+        "kategori": "drikkevarer",
+        "navn": "Nørrebro Bryghus",
+        "billede": "drik_5",
+        "beskrivelse": "Nørrebro Bryghus - NY Lager - 33 cl.",
+        "pris": 28
+  },
+    {
+        "id": 25,
+        "kategori": "drikkevarer",
+        "navn": "Moritz, Barcelona",
+        "billede": "drik_6",
+        "beskrivelse": "Lækker bælle-cerveza fra Barcelona - 33 cl.",
+        "pris": 35
+  },
+    {
+        "id": 26,
+        "kategori": "drikkevarer",
+        "navn": "Alkoholfri øl 'Agua de Moritz' Barcelona",
+        "billede": "drik_7",
+        "beskrivelse": "Alkoholfri cerveza fra Barcelona",
+        "pris": 35
+  }
+]
