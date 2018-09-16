@@ -79,7 +79,7 @@ function visRetter() {
             });
 
             klon.querySelector(".ret-billede").alt = "billede af" + ret.navn;
-            klon.querySelector(".ret-beskrivelse").textContent = ret.beskrivelse;
+//            klon.querySelector(".ret-beskrivelse").textContent = ret.beskrivelse;
             klon.querySelector(".ret-pris").textContent = "pris " + ret.pris + ",-";
 
             //placer klon i html
