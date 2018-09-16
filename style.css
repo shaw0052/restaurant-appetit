@@ -19,7 +19,6 @@ section {
 
 @media screen and (min-width:629px) {
     section {
-        background-color: white;
         margin: 0.5vw 15vw 0.5vw 15vw;
     }
 
@@ -162,12 +161,16 @@ nav {
     margin: 1vw 0vw 1vw 0vw;
 }
 
+.filtrering {
+    text-align: center;
+}
+
 /*--------- Template -------------*/
 
 article {
     background-color: white;
     max-width: 400px;
-
+    align-content: center;
 }
 
 
@@ -179,7 +182,6 @@ h2 {
     /*    padding-bottom: 2vw;*/
 }
 
-
 @media screen and (min-width:628px) {
     section {
         display: grid;
@@ -187,6 +189,8 @@ h2 {
         grid-gap: 10px;
     }
 }
+
+
 
 /*------------ Forside -------------*/
 
