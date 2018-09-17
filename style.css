@@ -75,6 +75,11 @@ header img {
     color: black;
 }
 
+a:hover {
+    color: rgb(149, 76, 61);
+}
+
+
 
 .bar {
     width: 1.8em;
@@ -98,9 +103,9 @@ header img {
 
 nav {
     background-color: rgba(255, 255, 255, 0.81);
-    padding: 2vw 0vw 2vw 4vw;
+
     margin-left: -4vw;
-    max-width: 92vw;
+    max-width: 97vw;
     position: absolute;
     width: 100%;
     transform-origin: top;
@@ -110,12 +115,11 @@ nav {
 }
 
 .hidden {
-    transform: translateY(-800px);
+    transform: translateY(-600px);
 }
 
 li {
     list-style: none;
-    padding-left: -2vw;
 }
 
 
@@ -126,11 +130,18 @@ li {
     "Lucida Sans Typewriter",
     "Lucida Typewriter",
     monospace;
-    font-size: 14px;
+    font-size: 18px;
     background-color: white;
     border: none;
     text-decoration: none;
 }
+
+button:hover {
+    color: rgb(149, 76, 61);
+    text-decoration-line: overline;
+}
+
+
 
 #filter {
     background-color: white;
@@ -139,7 +150,11 @@ li {
 
 .filtrering {
     text-align: center;
+    margin-bottom: 6vw;
 }
+
+
+
 
 /*--------- Template -------------*/
 
@@ -206,6 +221,11 @@ h2 {
     color: black;
     font-size: 1.8em;
 }
+
+.kontakt a:hover {
+    color: rgb(149, 76, 61);
+}
+
 
 hr {
     border: 0;
@@ -277,12 +297,17 @@ footer {
     "Lucida Typewriter",
     monospace;
     font-size: 12px;
-
+    /*    color: rgb(111, 142, 90);*/
+    color: darkgray;
     background-color: white;
 }
 
 footer a {
-    color: black;
+    color: darkgray;
+}
+
+footer a:hover {
+    color: rgb(149, 76, 61);
 }
 
 
