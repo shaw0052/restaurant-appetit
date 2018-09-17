@@ -51,18 +51,6 @@ header img {
     max-width: 80%;
 }
 
-@media screen and (min-width:629px) {
-    header img {
-        max-width: 80%;
-    }
-
-}
-
-@media screen and (min-width:1000px) {
-    header img {
-        max-width: 80%;
-    }
-}
 
 /*--------- burger menu -------------*/
 
@@ -119,28 +107,16 @@ nav {
     transition: transform .5s;
     transform: translateY(1);
     z-index: 5;
-
 }
 
 .hidden {
     transform: translateY(-800px);
 }
 
-
-@media screen and (min-width:629px) {
-    .bar {
-        width: 2.8em;
-        height: 0.24em;
-        background-color: rgb(149, 76, 61);
-        transition: transform .4s;
-    }
-
-    .menubutton {
-        padding-top: 2vw;
-    }
-
+li {
+    list-style: none;
+    padding-left: -2vw;
 }
-
 
 
 /*-------- filtrerings knapper -------------*/
@@ -182,14 +158,6 @@ h2 {
     /*    padding-bottom: 2vw;*/
 }
 
-@media screen and (min-width:628px) {
-    section {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 10px;
-    }
-}
-
 
 
 /*------------ Forside -------------*/
@@ -226,7 +194,7 @@ h2 {
     "Lucida Sans Typewriter",
     "Lucida Typewriter",
     monospace;
-    font-size: 12px;
+    font-size: 17px;
     text-align: center;
     background-color: white;
     margin: 0.5vw 2vw 5.5vw 2vw;
@@ -243,7 +211,6 @@ hr {
     border: 0;
     height: 0.9px;
     width: 50%;
-    /*    background-color: rgb(226, 185, 119);*/
     background-color: rgb(149, 76, 61);
 }
 
@@ -253,10 +220,9 @@ hr {
 /**--------- modal vindue -----------------**/
 
 #modal {
-    width: 93vw;
+    width: 90vw;
     height: 100vh;
     position: fixed;
-    text-align: center;
     background-color: rgba(0, 0, 0, .7);
     opacity: 0;
     pointer-events: none;
@@ -290,12 +256,72 @@ hr {
 }
 
 #modal.vis {
+    width: 90vw;
     opacity: 1;
     pointer-events: all;
     transition: 0.3s;
     z-index: 50;
 }
 
+
+
+/*------------ footer -------------*/
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+
+    font-family: "Courier New",
+    "Lucida Sans Typewriter",
+    "Lucida Typewriter",
+    monospace;
+    font-size: 12px;
+
+    background-color: white;
+}
+
+footer a {
+    color: black;
+}
+
+
+/*--------------- Media Q ----------------*/
+
+@media screen and (min-width:629px) {
+    header img {
+        max-width: 80%;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    header img {
+        max-width: 80%;
+    }
+}
+
+
+@media screen and (min-width:629px) {
+    .bar {
+        width: 2.8em;
+        height: 0.24em;
+        background-color: rgb(149, 76, 61);
+        transition: transform .4s;
+    }
+
+    .menubutton {
+        padding-top: 2vw;
+    }
+}
+
+@media screen and (min-width:628px) {
+    section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        grid-gap: 10px;
+    }
+}
 
 @media screen and (min-width:628px) {
 
@@ -329,28 +355,6 @@ hr {
         transition: 1s;
         overflow: scroll;
     }
-
-
-}
-
-
-/*------------ footer -------------*/
-
-footer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    font-family: "Courier New",
-    "Lucida Sans Typewriter",
-    "Lucida Typewriter",
-    monospace;
-    font-size: 12px;
-    text-align: center;
-    background-color: white;
-}
-
-footer a {
-    color: black;
 }
 
 
