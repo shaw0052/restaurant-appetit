@@ -21,9 +21,12 @@
 
         <div id="modal-content">
             <button>Close</button>
-            <h2 class="modal-navn"></h2>
             <img class="modal-billede" src="" alt="">
+
+            <h2 class="modal-navn"></h2>
+
             <p class="modal-beskrivelse"></p>
+            <p class="modal-pris"></p>
 
         </div>
 
@@ -32,75 +35,73 @@
     <header>
 
         <!------ Burger menu -------->
-
-        <div class="burgermenu">
-            <div class="menubutton">
-                <div class="bar bar1"></div>
-                <div class="bar bar2"></div>
-                <div class="bar bar3"></div>
-            </div>
-
-            <h1></h1>
-            <nav class="hidden">
-                <div class="burger">
-                    <ul>
-                        <li><a href="index.html">Forside</a></li>
-                        <li><a href="menu.html">Menu</a></li>
-                        <li><a href="kontakt.html">Kontakt</a></li>
-                    </ul>
+        <div class="sticky">
+            <div class="burgermenu">
+                <div class="menubutton">
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
+                    <div class="bar bar3"></div>
                 </div>
-            </nav>
+
+                <nav class="hidden">
+                    <div class="burger">
+                        <ul>
+                            <li><a href="index.html">Forside</a></li>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="kontakt.html">Kontakt</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </div>
-
-
-        <picture class="logo_1">
-
-            <source media="(min-width:1920px) and (orientation: landscape)" srcset="SVG/logo_1.svg">
-
-            <source media="(min-width:1024px) and (orientation: landscape)" srcset="SVG/logo_1.svg">
-
-            <source media="(min-width:768px) and (orientation: portrait)" srcset="SVG/logo_1.svg">
-
-            <source media="(min-width:627px) and (orientation: landscape)" srcset="SVG/logo_1.svg">
-
-            <source media="(min-width: 375px) and (orientation: portrait)" srcset="SVG/logo_2.svg">
-
-
-            <img src="SVG/logo_2.svg" alt="mobile portrait" style="width: 100%;">
-
-            <a href="index.html"> </a>
-
-        </picture>
-
-
 
     </header>
 
+    <!--------- Logo/splash billede i 2 udgaver ----------->
+    <picture class="logo_1">
+
+        <source media="(min-width:1920px) and (orientation: landscape)" srcset="SVG/logo_1.svg">
+
+        <source media="(min-width:1024px) and (orientation: landscape)" srcset="SVG/logo_1.svg">
+
+        <source media="(min-width:768px) and (orientation: portrait)" srcset="SVG/logo_1.svg">
+
+        <source media="(min-width:627px) and (orientation: landscape)" srcset="SVG/logo_1.svg">
+
+        <source media="(min-width: 375px) and (orientation: portrait)" srcset="SVG/logo_2.svg">
+
+
+        <img src="SVG/logo_2.svg" alt="mobile portrait" style="width: 100%;">
+
+        <a href="index.html"> </a>
+
+    </picture>
+
+
 
     <!------------ Filtrerings knapper ----------------->
+    <main>
+        <div id="filter">
 
-    <div id="filter">
-
-        <div class="filtrering">
-            <h1></h1>
-            <button class="menu-item" data-menu="alle">Alle</button>
-            <button class="menu-item" data-menu="pizzaer">Pizzaer</button>
-            <button class="menu-item" data-menu="sandwiches">Sandwiches</button>
-            <button class="menu-item" data-menu="salater">Salater</button>
-            <button class="menu-item" data-menu="andet">Andet</button>
-            <button class="menu-item" data-menu="drikkevarer">Drikkevarer</button>
+            <div class="filtrering">
+                <h1></h1>
+                <button class="menu-item" data-menu="alle">Alle</button>
+                <button class="menu-item" data-menu="pizzaer">Pizzaer</button>
+                <button class="menu-item" data-menu="sandwiches">Sandwiches</button>
+                <button class="menu-item" data-menu="salater">Salater</button>
+                <button class="menu-item" data-menu="andet">Andet</button>
+                <button class="menu-item" data-menu="drikkevarer">Drikkevarer</button>
+            </div>
         </div>
-    </div>
 
-    <section class="ret-display"> </section>
+        <section class="ret-display"> </section>
 
 
-    <!------- template ----------->
-    <div class="section">
 
-        <template class="ret-template">
+        <div class="section">
+            <!------- template - viser den enkelte ret ----------->
+            <template class="ret-template">
      <article>
-
 
         <img class="ret-billede" src="" alt="">
          <h2 class="ret-navn"> </h2>
@@ -110,10 +111,10 @@
      </article>
     </template>
 
-    </div>
-
+        </div>
+    </main>
     <script>
-        //---------- Json, Modal, Filtrering-----------------//
+        //---------- Json, Modal, Filtrering------------
 
         let retter = [];
         let kategoriFilter = "alle";
@@ -151,7 +152,7 @@
             let display = document.querySelector(".ret-display");
             let temp = document.querySelector(".ret-template");
 
-            document.querySelector("header h1").textContent = kategoriFilter;
+            document.querySelector(".filtrering h1").textContent = kategoriFilter;
 
 
             display.textContent = "";
@@ -193,6 +194,7 @@
             modal.querySelector(".modal-billede").alt = "Foto af" + retten.navn;
 
             modal.querySelector(".modal-beskrivelse").textContent = retten.beskrivelse;
+            modal.querySelector(".modal-pris").textContent = "pris " + retten.pris + ",-";
 
 
             modal.querySelector("button").addEventListener("click", () => {

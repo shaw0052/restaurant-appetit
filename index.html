@@ -18,44 +18,46 @@
     <header>
 
         <!------ Burger menu -------->
-
-        <div class="burgermenu">
-            <div class="menubutton">
-                <div class="bar bar1"></div>
-                <div class="bar bar2"></div>
-                <div class="bar bar3"></div>
-            </div>
-
-
-            <nav class="hidden">
-                <div class="burger">
-                    <ul>
-                        <li><a href="index.html">Forside</a></li>
-                        <li><a href="menu.html">Menu</a></li>
-                        <li><a href="kontakt.html">Kontakt</a></li>
-                    </ul>
+        <div class="sticky">
+            <div class="burgermenu">
+                <div class="menubutton">
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
+                    <div class="bar bar3"></div>
                 </div>
-            </nav>
+
+
+                <nav class="hidden">
+                    <div class="burger">
+                        <ul>
+                            <li><a href="index.html">Forside</a></li>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="kontakt.html">Kontakt</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </div>
 
-        <!-------- appetit logo - mobil + desktop ---------->
-        <picture class="logo_1">
-
-            <source media="(min-width:1920px) and (orientation: landscape)" srcset="SVG/logo_1.svg">
-
-            <source media="(min-width:1024px) and (orientation: landscape)" srcset="SVG/logo_1.svg">
-
-            <source media="(min-width:768px) and (orientation: portrait)" srcset="SVG/logo_1.svg">
-
-            <source media="(min-width:627px) and (orientation: landscape)" srcset="SVG/logo_1.svg">
-
-            <source media="(min-width: 375px) and (orientation: portrait)" srcset="SVG/logo_2.svg">
-
-            <img src="SVG/logo_2.svg" alt="mobile portrait" style="width: 100%;">
-
-        </picture>
-
     </header>
+    <!-------- appetit logo - mobil + desktop ---------->
+    <div class="logo_background"></div>
+    <picture class="logo_1">
+
+        <source media="(min-width:1920px) and (orientation: landscape)" srcset="SVG/logo_1.svg">
+
+        <source media="(min-width:1024px) and (orientation: landscape)" srcset="SVG/logo_1.svg">
+
+        <source media="(min-width:768px) and (orientation: portrait)" srcset="SVG/logo_1.svg">
+
+        <source media="(min-width:627px) and (orientation: landscape)" srcset="SVG/logo_1.svg">
+
+        <source media="(min-width: 375px) and (orientation: portrait)" srcset="SVG/logo_2.svg">
+
+        <img src="SVG/logo_2.svg" alt="mobile portrait" style="width: 100%;">
+
+    </picture>
+
 
     <!---------- Forside collage ----------------->
     <main>
@@ -87,6 +89,7 @@
             <a href="https://www.instagram.com/shawnamercano/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
         </p>
     </footer>
+
     <!----- JavaScript ----->
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="burgermenu.js"></script>
