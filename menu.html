@@ -15,17 +15,26 @@
 
 
 <body>
-    <!--------- modal vindue HTML----------------->
-
+    <!--------- modal vindue ----------------->
+    <!--Modalvindue - Skjult, men vises, når der trykkes på en ret. Fylder hele skærmen og har en halvgennemsigtig baggrund-->
     <section id="modal">
 
+        <!--#modal-content er beregnet til indholdet: billede, beskrivelse mm.-->
         <div id="modal-content">
+
+            <!--knap til at lukke modal- vinduet igen-->
             <button>Close</button>
+
+            <!--tomt img-tag til rettens billede-->
             <img class="modal-billede" src="" alt="">
 
+            <!--overskrift til rettens navn-->
             <h2 class="modal-navn"></h2>
 
+            <!--brødtekst til beskrivelse af retten-->
             <p class="modal-beskrivelse"></p>
+
+            <!--pris på retten-->
             <p class="modal-pris"></p>
 
         </div>
@@ -78,9 +87,10 @@
     </picture>
 
 
-
-    <!------------ Filtrerings knapper ----------------->
     <main>
+        <!------------ Filtrerings knapper ----------------->
+        <!--menu med knapper til filtrering af retter og drikkevarer-->
+
         <div id="filter">
 
             <div class="filtrering">
@@ -97,9 +107,8 @@
         <section class="ret-display"> </section>
 
 
-
         <div class="section">
-            <!------- template - viser den enkelte ret ----------->
+            <!------- template til visning af den enkelte ret ----------->
             <template class="ret-template">
      <article>
 
@@ -113,20 +122,24 @@
 
         </div>
     </main>
+
+
+    <!------------------- JavaScript ----------------------->
     <script>
         //---------- Json, Modal, Filtrering------------
-
         let retter = [];
         let kategoriFilter = "alle";
 
 
         document.addEventListener("DOMContentLoaded", start);
-
+        //funktion start udføres, når DOM-content er indlæst
         function start() {
             hentJson();
             forberedFiltrering();
         }
+
         //Filtrering af retter
+        //funktionen henter den data-værdi der ligger på menu-knappen
         function forberedFiltrering() {
             document.querySelectorAll(".filtrering button").forEach(knap => {
                 knap.addEventListener("click", () => {
@@ -139,14 +152,23 @@
 
         }
 
+        //funktionen henter og indlæser data fra jsonfilen
+        //lægger ret-objekterne i arrayet Retter.
+        //kalder visRetter
         async function hentJson() {
+            //sæt variablen myJson til at være data fra json-filen
             let jsonData = await fetch("menu.json");
+            //læg alle retter-objekter ind i arrayet Retter
             retter = await jsonData.json();
+            //kald funktion visRetter
             visRetter();
         }
 
 
         //Vis retter, billeder og tekst
+        //viser alle retter i arrayet Retter i dest. skabelon
+        //til hver ret hentes fra template-tagget
+        //Der bliver sat eventlistener på rettens billede, så den kalder visModal, når der klikkes
         function visRetter() {
             // globale variabeler
             let display = document.querySelector(".ret-display");
@@ -184,7 +206,10 @@
             });
         }
 
+
         //Vis modal vindue
+        //funktionen viser modalvinduet og udfylder den pågældende rets data, i modalvinduet.
+        //sætter eventlistener på luk-knap og fjerner modalvinduet ved klik
         function visModal(retten) {
             let modal = document.querySelector("#modal");
 

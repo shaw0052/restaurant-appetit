@@ -265,6 +265,8 @@ hr {
 
 /**--------- modal vindue -----------------**/
 
+/**-- modal-vinduet er som udgangspunkt skjult --**/
+
 #modal {
     height: 101vh;
     position: fixed;
@@ -274,6 +276,17 @@ hr {
     transition: 1s;
     overflow: scroll;
 }
+
+/**-- hvis modal-vinduet får tilføjet class vis, vises det --**/
+
+#modal.vis {
+    width: 100%;
+    opacity: 1;
+    pointer-events: all;
+    transition: 0.3s;
+    z-index: 50;
+}
+
 
 #modal-content {
     margin-top: 3vw;
@@ -303,15 +316,6 @@ hr {
     color: rgb(226, 185, 119);
     text-decoration-line: overline;
 }
-
-#modal.vis {
-    width: 100%;
-    opacity: 1;
-    pointer-events: all;
-    transition: 0.3s;
-    z-index: 50;
-}
-
 
 /*------------ footer -------------*/
 
@@ -390,7 +394,7 @@ footer a:hover {
         justify-items: center;
         grid-gap: 30px;
 
-        margin: 0vw 0vw 0vw 0vw;
+        margin: 0vw;
     }
 }
 
@@ -428,5 +432,7 @@ footer a:hover {
 @media screen and (min-width:800px) {
     footer {
         font-size: 14px;
+        padding-left: 20vw;
+        padding-right: 20vw;
     }
 }
